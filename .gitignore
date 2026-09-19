@@ -1,0 +1,53 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+ENV/
+pip-wheel-metadata/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------- ML weights & runs (auto-downloaded, too large for git) ----------
+*.pt
+*.onnx
+*.engine
+*.mlpackage
+weights/
+runs/
+datasets/
+wandb/
+
+# ---------- App outputs (regenerated on every run) ----------
+*_output.jpg
+*_output.png
+segmented_*.jpg
+roller_output.jpg
+
+# ---------- Hugging Face / caches ----------
+.cache/
+*.safetensors
+
+# ---------- Env / secrets ----------
+.env
+.env.*
+*.pem
+*.key
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
