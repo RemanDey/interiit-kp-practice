@@ -9,7 +9,8 @@ sam2_model = SAM("sam2_b.pt")
 
 text_prompt = "blue A4 sheet box"
 detector.set_classes([text_prompt])
-
+print(f"Set detector to detect: {text_prompt}")
+print(f"Detector classes: {detector.model.names}")
 image_path = "test1.png"
 image_cv = cv2.imread(image_path)
 h, w, _ = image_cv.shape
